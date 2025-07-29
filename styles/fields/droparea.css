@@ -1,0 +1,46 @@
+.dropzone {
+    border: 1px dashed var(--stroke-default);
+    border-radius: .25rem;
+
+    display: grid;
+    justify-items: center;
+    gap: .5rem;
+
+    text-align: center;
+    padding: 1.75rem 1rem;
+
+
+    position: relative;
+    & input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        opacity: 0;
+    }
+
+    & p {
+        color: #a8a29e;
+    }
+
+    &:hover{
+        border-width: 2px;
+        border-color: var(--stroke-highlight);
+        background-color: var(--surface-secondary);
+        
+        & p {
+
+            color: var(--text-tertiary);
+        }
+        
+        /*Também é possível mudar a cor do .svg diretamente pelo CSS
+        
+        Basta colar o arquivo direto no html e com o seletor "svg path" dá para mudar o parâmetro stroke e botar a cor que quiser.
+
+        O seletor :has(input:focus) checa se o input tiver em foco. Ou seja, se ele for selecionado pelas setinhas ou tab do navegador ele vai executar os parâmetros
+
+        o :focus-within checa se o elemento estiver em foco e aplica os estilos dos parâmetros
+        
+        */
+    }
+}
