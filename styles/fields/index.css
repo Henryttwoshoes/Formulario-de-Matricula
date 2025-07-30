@@ -50,3 +50,21 @@ select {
     background: url(../../assets/formulario-de-matricula-21f14f343c5973adad3c55baa7f58dae87a70084/assets/icons/arrow-down-01.svg) no-repeat right;
     /*Calc é uma função de CSS que permite fazer cálculos nas folhas de estilo para determinar certos parâmetros personalizados*/
 }
+
+
+.address .flex {
+    gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]) {
+    opacity: .5;
+}
+
+input {
+    &[disabled]{
+        background-color: var(--surface-disabled);
+
+        border: 1px solid var(--stroke-default);
+        color: var(--text-primary);
+    }
+}
