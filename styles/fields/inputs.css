@@ -2,11 +2,15 @@ input, textarea, select {
     appearance: none;
     width: 100%;
     border-radius: .5rem;
-    border: 1px solid var(--stroke-default);
+    outline: 1px solid var(--stroke-default);
+
+    border: 2px solid transparent;
 
     padding: .75rem 1rem;
 
     font: var(--text);
+
+    
 }
 
 label {
@@ -19,7 +23,7 @@ label {
 
 input:focus, select:focus, textarea:focus {
     outline: .25rem solid var(--surface-secondary);
-    border: .125rem solid var(--stroke-highlight);
+    border-color: var(--stroke-highlight);
     outline-offset: .1px;
 }
 
@@ -46,6 +50,8 @@ input:focus, select:focus, textarea:focus {
 select {
     background: url(../../assets/formulario-de-matricula-21f14f343c5973adad3c55baa7f58dae87a70084/assets/icons/arrow-down-01.svg) no-repeat right;
     /*Calc é uma função de CSS que permite fazer cálculos nas folhas de estilo para determinar certos parâmetros personalizados*/
+
+
 }
 
 
