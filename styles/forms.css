@@ -26,3 +26,9 @@ fieldset + fieldset {
     display: flex;
     gap: 1rem;
 }
+
+@media (max-width: 600px) {
+  .actions-wrapper {
+    flex-direction: column;
+  }
+}
